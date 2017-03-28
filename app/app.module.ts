@@ -3,10 +3,11 @@ import {BrowserModule} from '@angular/platform-browser';
 import {CommonModule} from '@angular/common';
 
 import {AppComponent}  from './app.component';
-import {HomeModule} from './home/home.module';
+import { HomeModule } from './home/home.module';
+import { ServicesModule } from "./services/services.module";
 
 @NgModule({
-    imports:        [BrowserModule, CommonModule, HomeModule],
+    imports:        [BrowserModule, CommonModule, HomeModule, ServicesModule.forRoot()],
     declarations:   [AppComponent],
     bootstrap:      [AppComponent]
 })
