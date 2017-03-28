@@ -1,4 +1,5 @@
 <h2>I'm a Home component template</h2>
-<widget-one></widget-one>
+<widget-one [messageService] = "simpleService.message"></widget-one> <!-- pass service into an input-->
+<widget-one [messageService] = "'Hay i am another message manual write'"></widget-one>
 <widget-two></widget-two>
 <div>{{simpleService.message}}</div>
