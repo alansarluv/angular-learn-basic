@@ -1,7 +1,26 @@
 <h2>I'm a Home component template</h2>
-<widget-one [messageService] = "simpleService.message"></widget-one> <!-- pass service into an input-->
-<widget-one [messageService] = "'Hay i am another message manual write'"></widget-one>
-<widget-two [testInput] = "'just testing input here'"></widget-two>
-<br>
-<widget-three> ng-content for content is write in here</widget-three>
+<p>================ start the widget one component ==============</p>
+	<widget-one [messageService] = "simpleService.message"></widget-one> <!-- pass service into an input-->
+	<widget-one [messageService] = "'Hay i am another message manual write'"></widget-one>
+<p>================ end the widget one component ==============</p>
+
+<p>================ start the widget two component ==============</p>
+	<widget-two [testInput] = "'just testing input here'"></widget-two>
+<p>================ end the widget two component ==============</p>
+
+<p>================ start the widget three component ==============</p>
+	<widget-three> 
+		<hr>
+		<p>open ng-content widget-three</p>
+		<h3>this is h3 from ng content widget three</h3>
+		<p class="close-widget-three">close ng-content widget-three</p>
+		<p headers> this one is written with a headers tag in html</p>
+		<hr>
+	</widget-three>
+<p>================ end the widget three component ==============</p>
+
+<p>================ start the widget four component ==============</p>
+
+<p>================ end the widget four component ==============</p>
+
 <div>{{simpleService.message}}</div>

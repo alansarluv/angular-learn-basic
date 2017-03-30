@@ -5,7 +5,6 @@ import { Component, Input } from "@angular/core";
     template: `
         <div>This is widget number two</div>
         <div>{{testInput}}</div>
-        <hr>
     `
 })
 

@@ -11,7 +11,6 @@ import { Component, Input } from "@angular/core";
     template: `
         <div *ngIf="selected">This is widget number one</div>
         <div>{{messageService}}</div>
-        <br> <hr>
     `
 })
 
